@@ -1,0 +1,22 @@
+{
+  "name": "mod.11.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run":"npx cypress run --browser edge",
+    "cy:open":"npx cypress open --browser edge",
+    "cy:report":"npx cypress run --record --key 4bab7404-d359-4f14-bfe4-9d765fd9a251 --browser edge"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2"
+  }
+
+}
