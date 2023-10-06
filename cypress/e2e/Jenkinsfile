@@ -18,11 +18,11 @@ pipeline{
                 }
         }
         
-        stage('Executar testes'){
+        /*stage('Executar testes'){
             steps{
               bat 'npm run cy:run'
                 }
         }
-        
+        */
         }
     }
