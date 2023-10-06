@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://localhost:5050", 
+    "integrationFolder": "C:/repositorio.it/mod.11.1/cypress/e2e/cypress.json", 
+    "testFiles": "**/*.spec.js" 
+    
+  }
+  
