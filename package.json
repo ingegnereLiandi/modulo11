@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "test": "echo \"Error: no test specified\" && exit 1",
     "npm": "run",
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
     "cy:report": "npx cypress run --record --key 4bab7404-d359-4f14-bfe4-9d765fd9a251 --browser edge"
   },
   "keywords": [],
-  "author": "",
+  "author": "Douglas Liandi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "12.17.4"
   },
   "dependencies": {
-    "@faker-js/faker": "^8.0.2"
+    "@faker-js/faker": "8.0.2"
   }
 }
