@@ -5,23 +5,23 @@ pipeline{
     }
 
     stages{
-        stage('Checkout') {
+        stage('Clonar Repositorio') {
             steps{
                 checkout([$class:'GitSCM', branches:[[name:'*/main']], userRemoteConfigs:[[url:'https://github.com/ingegnereLiandi/MeuAppCi.git']]])
             }
         }
 
-        stage('Build') {
+        stage('Instalar dependencias') {
             steps{
                 bat "node -v"
                 bat 'npm install'
-                bat 'npm run build'
+                
             }
         }
-        stage('Run Unit Tests') {
+        stage('Executar testes') {
             steps{
                 
-                bat 'npx cypress open'  
+                bat 'NO_COLOR=1 npx cypress run'  
                 
                 }
             }
