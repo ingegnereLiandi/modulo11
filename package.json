@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "npm": "run",
+    
     "cy:run": "npx cypress run --browser chrome",
     "cy:open": "npx cypress open --browser chrome",
     "cy:report": "npx cypress run --record --key 4bab7404-d359-4f14-bfe4-9d765fd9a251 --browser edge"
