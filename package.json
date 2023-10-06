@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:smokeTests": "npm run delete:reports && cypress run --env tags=@smoke --spec 'cypress/e2e/functional/**/*' &&--env failOnSnapshotDiff=false",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run":"npx cypress run --browser edge",
+    "cy:run":"npx cypress run",
     "cy:open":"npx cypress open --browser edge",
     "cy:report":"npx cypress run --record --key 4bab7404-d359-4f14-bfe4-9d765fd9a251 --browser edge"
   },
