@@ -20,12 +20,9 @@ pipeline{
         
        stage('Executar Testes') {
             steps {
-                script {
-                   cd 'C:/repositorio.it/mod.11.1'
-                   bat 'npm install cypress'
-                   bat 'npx cypress run'
+                bat 'npm install cypress'
+                bat 'npx cypress run'
                 }
             }
         }
     }
-}
