@@ -5,26 +5,23 @@ pipeline{
     }
 
     stages{
-        stage('Clonar Repositorio') {
+        stage('Clonar Repositorio'){
             steps{
                 checkout([$class:'GitSCM', branches:[[name:'*/main']], userRemoteConfigs:[[url:'https://github.com/ingegnereLiandi/MeuAppCi.git']]])
             }
         }
 
-        stage('Instalar dependencias') {
+        stage('Instalar dependencias'){
             steps{
                 bat "node -v"
                 bat 'npm install'
-                
-            }
+                }
         }
         
-        stage('Executar testes') {
+        stage('Executar testes'){
             steps{
-              
-                bat 'npx cypress run'
-                
-            }
+              bat 'npx cypress run'
+                }
         }
         
         }
