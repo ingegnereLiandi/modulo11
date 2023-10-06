@@ -14,7 +14,7 @@
   "author": "Douglas Liandi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "12.17.4"
+    "cypress": "^12.17.4"
   },
   "dependencies": {
     "@faker-js/faker": "8.0.2"
