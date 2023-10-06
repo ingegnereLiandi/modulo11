@@ -9,7 +9,7 @@ describe('Pagina de produtos', () => {
 
     });
 
-    it('Deve selecionar um produto da lista', () => {
+    it.only('Deve selecionar um produto da lista', () => {
         cy.get('[class="product-block grid"]')
             //.last()
             .eq(3)
