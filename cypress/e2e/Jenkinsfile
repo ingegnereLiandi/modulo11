@@ -20,7 +20,7 @@ pipeline{
         
         stage('Executar testes'){
             steps{
-              bat 'npx cypress run'
+              bat 'npx cypress open'
                 }
         }
         
